@@ -3,9 +3,9 @@
 - This simple program written in python allows the user the quickly switch between different wallpapers without having to go into their config file to change it.
 
 # How do i use it?
-- download the python script as it is, no installation required
-- make sure you have python installed on your system and run the program with python hyprwallpaper.py
+- download the python script as it is, as a raw file
 - make sure your config file is located in /home/*your username*/.config/hypr/
+- navigate into wherever you have downloaded the raw file and run the program with ``` python hyprwallpaper.py```
 - just follow the simple prompts given in the program
 
 # message
