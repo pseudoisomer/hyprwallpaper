@@ -7,6 +7,7 @@
 - make sure your config file is located in /home/*your username*/.config/hypr/
 - navigate into wherever you have downloaded the raw file and run the program with ```python hyprwallpaper.py```
 - just follow the simple prompts given in the program
+- if you have a GUI file manager like Dolphin, you can just drag and drop the picture you want as your wallpaper into the terminal, which will write out the entire path of the image automatically (*on most terminals, at least*)
 
 # message
 - this is a small beginner project I made for myself to make switching between my wallpapers faster. I am aware that it is very elementary and can use a lot more improvements, which I hope to add in the future as I become better at programming
