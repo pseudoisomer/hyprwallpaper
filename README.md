@@ -5,7 +5,7 @@
 # How do i use it?
 - download the python script as it is, as a raw file
 - make sure your config file is located in /home/*your username*/.config/hypr/
-- navigate into wherever you have downloaded the raw file and run the program with ``` python hyprwallpaper.py```
+- navigate into wherever you have downloaded the raw file and run the program with ```python hyprwallpaper.py```
 - just follow the simple prompts given in the program
 
 # message
