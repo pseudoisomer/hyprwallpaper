@@ -6,7 +6,9 @@
 - download the python script as it is, as a raw file
 - make sure your config file is located in /home/*your username*/.config/hypr/
 - navigate into wherever you have downloaded the raw file and run the program with
-```python3 hyprwallpaper.py```
+```
+python3 hyprwallpaper.py
+```
 - just follow the simple prompts given in the program
 - if you have a GUI file manager like Dolphin, you can just drag and drop the picture you want as your wallpaper into the terminal, which will write out the entire path of the image automatically (*on most terminals, at least*)
 
