@@ -23,8 +23,9 @@ while confirmed == False:
 		print('\033[91mfile not found, please try again\033[0m')				
 
 command_for_wallpaper = 'preload = ' + chosen_wp + '\nwallpaper = ,' + chosen_wp
-
-with open('//home//sudol//.config//hypr//hyprpaper.conf','w') as file:
+home_dir = os.path.expanduser('~')
+hyprpaper_conf_file = os.path.join(home_dir, '.config/hypr/hyprpaper.conf')
+with open(hyprpaper_conf_file,'w') as file:
 	file.write(command_for_wallpaper)
 
 print(f"\033[92mwallpaper successfully changed to {chosen_wp}\033[0m")
