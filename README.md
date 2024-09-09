@@ -13,7 +13,7 @@ pip install hyprwallpaper
 ```
 - make sure your config file is located in /home/*your username*/.config/hypr/
 ```
-python3 -m hyprwallpaper.py
+python3 -m hyprwallpaper
 ```
 - just follow the simple prompts given in the program
 - if you have a GUI file manager like Dolphin, you can just drag and drop the picture you want as your wallpaper into the terminal, which will write out the entire path of the image automatically (*on most terminals, at least*)
