@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "hyprwallpaper"
 version = "1.1.1"
-authors = [{ name = "kanade" }]
+authors = [{ name = "pseudoisomer" }]
 description = "wallpaper management program for hyprland"
 
 readme = "README.md"
