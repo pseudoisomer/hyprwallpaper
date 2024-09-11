@@ -58,8 +58,36 @@ def change_picture_wallpaper(chosen_image_wallpaper):
 
 def change_video_wallpaper(chosen_video_wallpaper):
 
-    command_for_wallpaper = ['mpvpaper','-o' ,'"no-audio --loop"', 'eDP-1',chosen_video_wallpaper]
-    subprocess.run(" ".join(command_for_wallpaper),shell=True)
+    command_for_wallpaper = ['mpvpaper ','-o ' ,'"no-audio --loop " ', 'eDP-1 ', ' ',chosen_video_wallpaper]
+
+
+    home_dir= os.path.expanduser('~')
+    hyprland_conf_file = os.path.join(home_dir,'.config/hypr/hyprland.conf')
+
+    with open(hyprland_conf_file, 'r') as file:
+        lines = file.readlines()
+
+    conf_file_code = ''.join(command_for_wallpaper)
+
+    modified = False
+    for i,line in enumerate(lines):
+        if line.strip().startswith('exec-once = mpvpaper'):
+            lines[i] = f'exec-once = {conf_file_code}'
+            modified = True
+            break
+        elif line.strip().startswith('exec-once'):
+            lines.insert(i+1 , f'exec-once = {conf_file_code}\n')
+            modified = True
+            break
+
+    with open(hyprland_conf_file, 'w') as file :
+        file.writelines(lines)
+
+    if modified:
+        print(f'added new command in {hyprland_conf_file} : {conf_file_code}')
+    else:
+        print('fail')
+
     sys.exit(f"\033[92mwallpaper successfully changed to {chosen_video_wallpaper}\033[0m")
 
 while confirmed == False:
